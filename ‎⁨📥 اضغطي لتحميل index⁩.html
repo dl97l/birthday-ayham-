@@ -1,0 +1,112 @@
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>تهنئة عيد ميلاد أيهم</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #001a33, #000d1a);
+    overflow: hidden;
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    text-align: center;
+  }
+
+  #stars, #stars2, #stars3 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  #stars {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png') repeat;
+    animation: moveStars 50s linear infinite;
+  }
+  #stars2 {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars2.png') repeat;
+    animation: moveStars 100s linear infinite;
+  }
+  #stars3 {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars3.png') repeat;
+    animation: moveStars 150s linear infinite;
+  }
+
+  @keyframes moveStars {
+    from {background-position: 0 0;}
+    to {background-position: -10000px 5000px;}
+  }
+
+  .content {
+    position: relative;
+    top: 20vh;
+    z-index: 10;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 3.5em;
+    margin-bottom: 0.2em;
+    text-shadow: 0 0 15px #00aaff;
+  }
+
+  p {
+    font-size: 1.5em;
+    line-height: 1.6;
+    margin-bottom: 1.2em;
+    text-shadow: 0 0 10px #00aaff;
+  }
+
+  .heart {
+    color: #00aaff;
+    font-size: 2em;
+  }
+
+  .music {
+    margin-top: 30px;
+  }
+
+  iframe {
+    border: none;
+    border-radius: 10px;
+    width: 320px;
+    height: 80px;
+  }
+</style>
+</head>
+<body>
+
+<div id="stars"></div>
+<div id="stars2"></div>
+<div id="stars3"></div>
+
+<div class="content">
+  <h1>كل سنة وانتَ بخير، أيهم 💙</h1>
+  <p>
+    اليوم مو بس مناسبة مميزة لأن عيد ميلادي،<br/>
+    لا، لأن “عيد ميلادك” مو يوم عادي،<br/>
+    هو بداية حياة جديدة إلك.<br/>
+    وأنت بخير، كل عام وانت بخير،<br/>
+    كل عام وأنا أحبك.<br/>
+    أشكد ما كان البعد طويل بيناتنا،<br/>
+    راح أبقى أذكرك واذكر كل سنة،<br/>
+    وأحاول أدزّلك: <span class="heart">أحبك 💙</span>
+  </p>
+
+  <div class="music">
+    <iframe src="https://www.youtube.com/embed/6cjgNa_0W5Q?autoplay=1&loop=1&playlist=6cjgNa_0W5Q" allow="autoplay" allowfullscreen></iframe>
+  </div>
+</div>
+
+</body>
+</html>
